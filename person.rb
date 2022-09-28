@@ -20,7 +20,8 @@ class Person < Nameable
   def correct_name
     @name
   end
-  def has_rental(rental, book)
+
+  def add_rental(rental, book)
     @rentals.push(rental)
     rental.person = self
     rental.book = book
