@@ -1,10 +1,12 @@
 require './student.rb'
 require './teacher.rb'
+require './book.rb'
 
 $people = []
 $books = []
 
 def list_all_books()
+    $books.each { |objs| puts "Title: #{objs.title}, Author: #{objs.author}" }
 end
 
 def list_all_people()
