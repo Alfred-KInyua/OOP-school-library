@@ -1,4 +1,4 @@
-require './app.rb'
+require './app'
 
 def main
   exit = false
@@ -16,24 +16,24 @@ def main
 
   case response
   when 1
-    list_all_books()
+    list_all_books
   when 2
-    list_all_people()
+    list_all_people
   when 3
-    create_a_person()
+    create_a_person
   when 4
-    create_a_book()
+    create_a_book
   when 5
-    create_a_rental()
+    create_a_rental
   when 6
-    list_all_rentals_for_a_given_person_id()
+    list_all_rentals_for_a_given_person_id
   when 7
     exit = true
-  else 
-    puts "Please enter a valid input"
+  else
+    puts 'Please enter a valid input'
   end
 
-  main() unless exit == true
+  main unless exit == true
 end
 
-main()
+main
