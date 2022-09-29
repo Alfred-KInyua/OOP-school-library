@@ -2,10 +2,14 @@ require './student'
 require './teacher'
 require './book'
 require './rental'
+class App
+    attr_reader :people, :books, :rentals
+    def initialize
+        @people = []
+        @books = []
+        @rentals = []
+      end
 
-$people = []
-$books = []
-$rentals = []
 def list_all_books
   $books.each { |objs| puts "Title: #{objs.title}, Author: #{objs.author}" }
 end
