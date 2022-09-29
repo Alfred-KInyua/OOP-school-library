@@ -10,6 +10,7 @@ def list_all_books()
 end
 
 def list_all_people()
+    $people.each { |lst| puts "[#{lst.class}] Name: #{lst.name}, ID: #{lst.id}, Age: #{lst.age}" }
 end
 
 def create_a_person()
