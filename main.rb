@@ -1,4 +1,6 @@
+require 'pry'
 require_relative 'app'
+binding.pry
 
 def call_app(app, choice)
   case choice
